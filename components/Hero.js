@@ -47,12 +47,12 @@ const Hero = () => {
                 alt=""
               />
               <div className={style.author}>
-                <div className={style.name}>Jolly</div>
+                <div className={style.name}>GVO</div>
                 <a
                   className="text-[#1868b7]"
                   href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/2324922113504035910649522729980423429926362207300810036887725141691069366277"
                 >
-                  hola-kanola
+                  livethelifetv
                 </a>
               </div>
             </div>

@@ -22,7 +22,7 @@ export default function Home() {
       {
         style: {
           background: '#04111d',
-          color: '#fff',
+          color: '#f9d500',
         },
       }
     )
