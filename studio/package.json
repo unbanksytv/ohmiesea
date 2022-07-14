@@ -1,10 +1,10 @@
 {
-  "name": "openseablockchainclone",
+  "name": "ohmiesea_db",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Rafeh Qazi <qazi@cleverprogrammer.com>",
+  "author": "GVO",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
