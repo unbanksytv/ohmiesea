@@ -82,25 +82,25 @@ const Collection = () => {
     })()
   }, [marketPlaceModule])
 
-  const fetchCollectionData = async (sanityClient = client) => {
+   const fetchCollectionData = async (sanityClient = client) => {
     const query = `*[_type == "marketItems" && contractAddress == "${collectionId}" ] {
       "imageUrl": profileImage.asset->url,
       "bannerImageUrl": bannerImage.asset->url,
-      volumeTraded,
-      createdBy,
-      contractAddress,
-      "creator": createdBy->userName,
-      title, floorPrice,
-      "allOwners": owners[]->,
+      // volumeTraded,
+      // createdBy,
+      // contractAddress,
+      // "creator": createdBy->userName,
+      // title, floorPrice,
+      // "allOwners": owners[]->,
       description
     }`
 
-    const collectionData = await sanityClient.fetch(query)
+     const collectionData = await sanityClient.fetch(query)
 
-    console.log(collectionData, '🔥')
+     console.log(collectionData, '🔥')
 
-    // the query returns 1 object inside of an array
-    await setCollection(collectionData[0])
+     // the query returns 1 object inside of an array
+     await setCollection(collectionData[0])
   }
 
   useEffect(() => {
@@ -118,7 +118,7 @@ const Collection = () => {
           src={
             collection?.bannerImageUrl
               ? collection.bannerImageUrl
-              : 'https://via.placeholder.com/200'
+              : 'https://livethelife.tv/content/images/size/w2400/2022/04/04_Dimitri_Daniloff_Archives_Plugs.jpg'
           }
           alt="banner"
         />
@@ -130,12 +130,12 @@ const Collection = () => {
             src={
               collection?.imageUrl
                 ? collection.imageUrl
-                : 'https://via.placeholder.com/200'
+                : 'https://livethelife.tv/content/images/size/w2400/2022/04/04_Dimitri_Daniloff_Archives_Plugs.jpg'
             }
             alt="profile image"
           />
         </div>
-        <div className={style.endRow}>
+         <div className={style.endRow}>
           <div className={style.socialIconsContainer}>
             <div className={style.socialIconsWrapper}>
               <div className={style.socialIconsContent}>

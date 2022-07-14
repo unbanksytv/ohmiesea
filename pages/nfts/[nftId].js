@@ -29,7 +29,7 @@ const Nft = () => {
       provider.getSigner(),
       'https://rinkeby.infura.io/v3/8939c7d1d5d44d7aa151d4173f5b8189'
     )
-    return sdk.getNFTModule('0x4E953584EaaeB49a91D0456C7d6d4B4B180B92A5')
+    return sdk.getNFTModule('0x84f0E7275D78338e7e7938A0204c856b9E2B2bbe')
   }, [provider])
 
   // get all NFTs in the collection
