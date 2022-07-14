@@ -43,8 +43,8 @@ const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
     module = marketPlaceModule
   ) => {
     console.log(listingId, quantityDesired, module, 'david')
-    // yo RAZA lets goooo!!!
-    //yo Qazi, ok
+    // yo GVO lets goooo!!!
+    //yo OwKaay, ok
     // sure okay about to run it...
     // just clicked buy now...
     // still error
