@@ -1,23 +1,28 @@
 import '../styles/globals.css'
-import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ToastContainer } from "react-toastify";
 
-/**
- * The chain ID 4 represents the Rinkeby network
- * The `injected` connector is a web3 connection method used by Metamask
- */
-const supportedChainIds = [4]
-const connectors = {
-  injected: {},
-}
+import 'react-toastify/dist/ReactToastify.min.css'
+
+export const activeChainId = ChainId.Rinkeby;
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThirdwebWeb3Provider
-      supportedChainIds={supportedChainIds}
-      connectors={connectors}
-    >
+    <ThirdwebProvider desiredChainId={activeChainId}>
       <Component {...pageProps} />
-    </ThirdwebWeb3Provider>
+      <ToastContainer 
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+    </ThirdwebProvider>
   )
 }
 

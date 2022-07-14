@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import tw from "tailwind-styled-components";
-import { useWeb3 } from '@3rdweb/hooks'
 import { useEffect } from 'react'
 import { client } from '../lib/sanityClient'
 import toast, { Toaster } from 'react-hot-toast'
 import Header from "../components/Header";
 import Main from "../components/Main";
-import Button from "../components/Button";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -49,8 +47,6 @@ export default function Home() {
       </Head>
       <Header />
       <Main />
-      <Button />
-      <Hero />
       <Footer />
      </Container>
   )
