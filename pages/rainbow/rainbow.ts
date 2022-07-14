@@ -32,7 +32,8 @@ const { wallets } = getDefaultWallets({
   chains,
 });
 
-const AppInfo = {
+const 
+AppInfo = {
   appName: 'Rainbowkit',
 };
 
